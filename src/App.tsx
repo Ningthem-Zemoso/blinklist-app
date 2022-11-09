@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ButtonComponent from './components/atoms/Button';
+import InputComponent from './components/atoms/Input';
+import InputLabelComponent from './components/atoms/InputLabel';
+import MenuItemComponent from './components/atoms/MenuItem';
+import SelectComponent from './components/atoms/Select';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ButtonComponent
+        onClick={() => alert("I am clicked")}
+      >
+        Click Me
+      </ButtonComponent>
+
+      <InputComponent onChange={() => { }} />
+
+      <div>
+        <SelectComponent label="Select">
+          <MenuItemComponent value={1}>One</MenuItemComponent>
+          <MenuItemComponent value={2}>Two</MenuItemComponent>
+          <MenuItemComponent value={3}>Three</MenuItemComponent>
+        </SelectComponent>
+      </div>
+
+      <div>
+        <InputLabelComponent>Enter your name</InputLabelComponent>
+      </div>
+
     </div>
   );
 }

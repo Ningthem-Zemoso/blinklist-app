@@ -1,34 +1,23 @@
 import React from 'react';
-import ButtonComponent from './components/atoms/Button';
-import InputComponent from './components/atoms/Input';
-import InputLabelComponent from './components/atoms/InputLabel';
-import MenuItemComponent from './components/atoms/MenuItem';
-import SelectComponent from './components/atoms/Select';
+import './App.css';
+import { ThemeProvider } from '@mui/material/styles';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './routes';
+import axios from 'axios';
+import { blinkTheme } from './theme'
+import { Button, Typography } from '@mui/material';
+
+
+axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
 
 const App: React.FC = () => {
+
   return (
-    <div className="App">
-      <ButtonComponent
-        onClick={() => alert("I am clicked")}
-      >
-        Click Me
-      </ButtonComponent>
-
-      <InputComponent onChange={() => { }} />
-
-      <div>
-        <SelectComponent label="Select">
-          <MenuItemComponent value={1}>One</MenuItemComponent>
-          <MenuItemComponent value={2}>Two</MenuItemComponent>
-          <MenuItemComponent value={3}>Three</MenuItemComponent>
-        </SelectComponent>
-      </div>
-
-      <div>
-        <InputLabelComponent>Enter your name</InputLabelComponent>
-      </div>
-
-    </div>
+    <ThemeProvider theme={blinkTheme}>
+      <Router>
+        <Routes />
+      </Router>
+    </ThemeProvider>
   );
 }
 

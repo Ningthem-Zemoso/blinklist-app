@@ -21,7 +21,8 @@ const InputComponent: React.FC<InputProps> = (props) => {
     placeholder = '',
     onChange = undefined,
     required = false,
-    type = "text"
+    type = "text",
+    sx
   } = props
   return (
     <Input
@@ -33,8 +34,9 @@ const InputComponent: React.FC<InputProps> = (props) => {
       onChange={onChange}
       required={required}
       type={type}
+      sx={sx}
     />
   )
 }
 
-export default InputComponent
+export default InputComponent;

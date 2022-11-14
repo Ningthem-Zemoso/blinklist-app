@@ -1,0 +1,136 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Bring Your Human to Work",
+      "slug": "bring-your-human-to-work",
+      "author": "Erica Keswin",
+      "mins_to_read": 10,
+      "image_url": "/images/1.png",
+      "category": "Humanity",
+      "created_at": "2022-11-09"
+    },
+    {
+      "id": 2,
+      "title": "Employee to Entrepreneur",
+      "slug": "employee-to-entrepreneur",
+      "author": "Steve Glaveski",
+      "mins_to_read": 12,
+      "image_url": "/images/2.png",
+      "category": "Humanity",
+      "created_at": "2022-11-08"
+    },
+    {
+      "id": 3,
+      "title": "Doesn’t Hurt to Ask",
+      "slug": "doesnt-hurt-to-ask",
+      "author": "Trey Gowdy",
+      "mins_to_read": 15,
+      "image_url": "/images/3.png",
+      "category": "Humanity",
+      "created_at": "2022-11-09"
+    },
+    {
+      "id": 4,
+      "title": "The Fate of Food",
+      "slug": "the-fate-of-food",
+      "author": "Amanda Little",
+      "mins_to_read": 12,
+      "image_url": "/images/4.png",
+      "category": "Humanity",
+      "created_at": "2022-11-09"
+    },
+    {
+      "id": 5,
+      "title": "Lives of the Stoics",
+      "slug": "lives-of-the-stoics",
+      "author": "Ryan Holiday, Stephen Hansel",
+      "mins_to_read": 10,
+      "image_url": "/images/5.png",
+      "category": "Humanity",
+      "created_at": "2022-11-09"
+    },
+    {
+      "id": 6,
+      "title": "Loving Your Business",
+      "slug": "loving-your-business",
+      "author": "Debbie King",
+      "mins_to_read": 15,
+      "image_url": "/images/6.png",
+      "category": "Humanity",
+      "created_at": "2022-11-09"
+    },
+    {
+      "id": 7,
+      "title": "The Lonely Century",
+      "slug": "lthe-lonely-century",
+      "author": "Noreena Hertz",
+      "mins_to_read": 14,
+      "image_url": "/images/7.png",
+      "category": "Humanity",
+      "created_at": "2022-11-09"
+    },
+    {
+      "id": 8,
+      "title": "Eat Better, Feel Better",
+      "slug": "eat-better-feel-better",
+      "author": "Giada De Laurentiis",
+      "mins_to_read": 14,
+      "image_url": "/images/8.png",
+      "category": "Humanity",
+      "created_at": "2022-11-09"
+    },
+    {
+      "id": 9,
+      "title": "Dropshipping",
+      "slug": "dropshipping",
+      "author": "James Moore",
+      "mins_to_read": 14,
+      "image_url": "/images/9.png",
+      "category": "Humanity",
+      "created_at": "2022-11-09"
+    }
+  ],
+  "library": [
+    {
+      "id": 1,
+      "status": "READING",
+      "bookId": 1
+    },
+    {
+      "id": 2,
+      "status": "FINISHED",
+      "bookId": 2
+    },
+    {
+      "id": 3,
+      "status": "READING",
+      "bookId": 3
+    },
+    {
+      "id": 100,
+      "status": "FINISHED",
+      "bookId": 4
+    },
+    {
+      "id": 5,
+      "status": "READING",
+      "bookId": 5
+    },
+    {
+      "id": 6,
+      "status": "READING",
+      "bookId": 6
+    },
+    {
+      "id": 7,
+      "status": "READING",
+      "bookId": 7
+    },
+    {
+      "id": 8,
+      "status": "FINISHED",
+      "bookId": 8
+    }
+  ]
+}
